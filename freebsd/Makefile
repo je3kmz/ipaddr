@@ -1,5 +1,3 @@
-# Created by: Eugene Kim <astralblue@users.noreply.github.com>
-
 PORTNAME=	ipaddr
 PORTVERSION=	1.0.0
 DISTVERSIONPREFIX=	v
@@ -11,6 +9,8 @@ WWW=		https://github.com/astralblue/ipaddr
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_i386=	uses __int128
 
 USES=		cmake
 
